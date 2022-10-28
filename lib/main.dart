@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:algorithm/path.dart';
 import 'package:algorithm/ux/pages/home.dart';
 import 'package:provider/provider.dart';
 
@@ -23,7 +24,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(),
+      onGenerateRoute: Path.generateRoute,
+      initialRoute: '/',
     );
   }
 }

@@ -12,12 +12,11 @@ import 'package:algorithm/ux/pages/sort/shell.dart';
 import 'package:flutter/material.dart';
 
 class SortInner extends StatefulWidget {
+  final String setupPageRoute;
   const SortInner({
     super.key,
     required this.setupPageRoute,
   });
-
-  final String setupPageRoute;
 
   @override
   SortInnerState createState() => SortInnerState();
@@ -25,7 +24,6 @@ class SortInner extends StatefulWidget {
 
 class SortInnerState extends State<SortInner> {
   final _navigatorKey = GlobalKey<NavigatorState>();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

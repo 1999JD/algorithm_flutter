@@ -17,11 +17,24 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView(
         children: [
           ListTile(
-            title: const Text('linked list'),
+            title: const Text('排序演算法'),
             onTap: () {
-              Navigator.of(context).pushNamed('/linked-list');
+              Navigator.of(context).pushNamed('/sort');
             },
           ),
+          ListTile(
+            title: const Text('搜尋演算法'),
+            onTap: () {
+              final snackBar = SnackBar(
+                content: const Text('暫無此頁面'),
+                action: SnackBarAction(
+                  label: '關閉',
+                  onPressed: () {},
+                ),
+              );
+              ScaffoldMessenger.of(context).showSnackBar(snackBar);
+            },
+          )
         ],
       ),
     );

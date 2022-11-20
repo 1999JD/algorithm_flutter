@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:algorithm/path.dart';
+import 'package:algorithm/route/path.dart';
 import 'package:algorithm/ux/pages/home.dart';
-import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp()

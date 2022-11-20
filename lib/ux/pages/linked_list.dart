@@ -16,9 +16,6 @@ class _LinkedListState extends State<LinkedList> {
   Widget build(BuildContext context) {
     List<int> nodes = [1, 2, 3, 4, 5];
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('鏈結串列'),
-      ),
       body: Column(
         children: [
           Expanded(
@@ -61,13 +58,6 @@ class _LinkedListState extends State<LinkedList> {
                 list.push(3);
                 list.push(2);
                 list.push(5);
-                print(list);
-                // final node1 = Node(value: 1);
-                // final node2 = Node(value: 2);
-                // node1.next = node2;
-                // print('查看值');
-                // print(inputController.text);
-                // print(node1);
               },
               child: const Text('插入'),
             ),
